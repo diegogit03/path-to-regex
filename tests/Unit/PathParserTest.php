@@ -1,6 +1,6 @@
 <?php
 
-use Diego\PathToRegexp\PathParser;
+use Diego03\PathToRegexp\PathParser;
 
 test('It should create a regex for a simple path', function () {
     $parser = new PathParser();
