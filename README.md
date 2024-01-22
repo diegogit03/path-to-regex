@@ -5,7 +5,7 @@ The `PathToRegexp` PHP library allows you to easily convert route paths into reg
 ## Installation
 
 ```bash
-composer require diego/path-to-regexp
+composer require diego03/path-to-regexp
 ```
 
 ## Usage
