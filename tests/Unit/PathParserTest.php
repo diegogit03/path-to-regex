@@ -2,6 +2,13 @@
 
 use Diego03\PathToRegexp\PathParser;
 
+test('It should create a regex for a / path', function () {
+    $parser = new PathParser();
+    $regex = $parser->toRegex('/');
+
+    expect($regex->match('/')->test())->toBe(true);
+});
+
 test('It should create a regex for a simple path', function () {
     $parser = new PathParser();
     $regex = $parser->toRegex('/users');

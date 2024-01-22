@@ -13,6 +13,10 @@ class PathParser
 
     public function toRegex(string $path)
     {
+        if ($path === '/') {
+            return Pattern::of('^\/$');
+        }
+
         $tokens = $this->tokenize($path);
         $regexPattern = '';
 
