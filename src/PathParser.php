@@ -1,6 +1,6 @@
 <?php
 
-namespace Diego\PathToRegexp;
+namespace Diego03\PathToRegexp;
 
 use Exception;
 use TRegx\CleanRegex\Pattern;
