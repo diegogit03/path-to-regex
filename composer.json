@@ -25,5 +25,8 @@
     },
     "require": {
         "rawr/t-regx": "^0.41.5"
-    }
+    },
+    "version": "1.0.0",
+    "homepage": "https://github.com/diegogit03/path-to-regex-php",
+    "readme": "https://github.com/diegogit03/path-to-regex-php/blob/main/README.md"
 }
