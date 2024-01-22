@@ -1,11 +1,11 @@
 {
-    "name": "diego/path-to-regexp",
+    "name": "diego03/path-to-regexp",
     "description": "A very simpler path-to-regexp in php",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Diego\\PathToRegexp\\": "src/"
+            "Diego03\\PathToRegexp\\": "src/"
         }
     },
     "authors": [
