@@ -42,8 +42,12 @@ test('It should create a regex for a path with multiple params', function () {
 
 test('It should create a regex for a path with optional param', function () {
     $parser = new PathParser();
+    $onlyParamRegex = $parser->toRegex('/:id?');
     $regex = $parser->toRegex('/users/:id?');
 
     expect($regex->match('/users/1')->test())->toBe(true);
     expect($regex->match('/users')->test())->toBe(true);
+
+    expect($onlyParamRegex->match('/1')->test())->toBe(true);
+    expect($onlyParamRegex->match('/')->test())->toBe(true);
 });

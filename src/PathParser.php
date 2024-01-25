@@ -22,11 +22,11 @@ class PathParser
 
         foreach ($tokens as $token) {
             if ($token['type'] === 'param') {
-                $regexPattern .= "\/(?<{$token['value']}>\\w+)";
+                $regexPattern .= "(\/(?<{$token['value']}>\w+))";
             } else if ($token['type'] === 'optional_param') {
-                $regexPattern .= "(\/(?<{$token['value']}>\\w+))?";
+                $regexPattern .= "(\/(?<{$token['value']}>\w*))?";
             } else if ($token['type'] === 'name') {
-                $regexPattern .= "\/{$token['value']}";
+                $regexPattern .= "(\/{$token['value']})";
             }
         }
 
