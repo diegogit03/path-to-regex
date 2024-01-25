@@ -19,7 +19,7 @@ $pathParser = new PathParser();
 $pattern = $pathParser->toRegex('/users/:id/edit');
 
 // Use $pattern in your route matching logic
-if ($pattern->matches($uri)) {
+if ($pattern->match($uri)) {
     // Matched!
 }
 ```
@@ -31,7 +31,7 @@ $pathParser = new PathParser();
 $pattern = $pathParser->toRegex('/posts/:postId');
 
 // The resulting pattern will match paths like '/posts/123'
-if ($pattern->matches($uri)) {
+if ($pattern->match($uri)) {
     // Matched!
 }
 ```
@@ -43,7 +43,7 @@ $pathParser = new PathParser();
 $pattern = $pathParser->toRegex('/articles/:slug?');
 
 // The resulting pattern will match paths like '/articles' and '/articles/some-slug'
-if ($pattern->matches($uri)) {
+if ($pattern->match($uri)) {
     // Matched!
 }
 ```
@@ -55,7 +55,7 @@ $pathParser = new PathParser();
 $pattern = $pathParser->toRegex('/categories/:categoryName');
 
 // The resulting pattern will match paths like '/categories/some-category'
-if ($pattern->matches($uri)) {
+if ($pattern->match($uri)) {
     // Matched!
 }
 ```
@@ -67,7 +67,7 @@ $pathParser = new PathParser();
 $pattern = $pathParser->toRegex('/users/:userId/:action?');
 
 // The resulting pattern will match paths like '/users/123' and '/users/123/edit'
-if ($pattern->matches($uri)) {
+if ($pattern->match($uri)) {
     // Matched!
 }
 ```
